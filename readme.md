@@ -1,8 +1,8 @@
-#Zakhar repository
+# Zakhar repository
 
 ***
 
-##Converter
+## Converter
 + Order of execution:
   > Создать новую ветку от этой ветки, все изменения проводить в новой ветке. После выполнения всех заданий, создать pull-request(не мержить) в эту ветку.
 + Tasks:
