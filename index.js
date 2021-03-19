@@ -1,4 +1,5 @@
-let meter = '';
-let kilometer = '';
-let mile = '';
-let inch = '';
+const METER = '';
+const KILOMETER = '';
+const MILE = '';
+const INCH = '';
+
