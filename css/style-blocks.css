@@ -1,0 +1,66 @@
+.GeneralBlock {
+  position: absolute;
+  left: 2%;
+  right: 2%;
+  margin: 5% 10%;
+  padding: 5%;
+  height: 50%;
+  width: 66%;
+  background: #ffffff;
+  border: solid black;
+}
+.name-of-title {
+  position: absolute;
+  margin: 0;
+  width: 20%;
+  height: 10%;
+  top: 15%;
+  left: 40%;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+.into-block {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 80%;
+  height: 20%;
+}
+
+.nav-c-r {
+  position: absolute;
+  display: inline-block;
+  top: 65%;
+  left: 15%;
+  width: 70%;
+  height: 25%;
+}
+.in-block {
+  display: inline-block;
+}
+.input-num-size {
+  text-align: center;
+  position: relative;
+  top: 10%;
+  padding: 2.5%;
+  width: 15%;
+}
+.input-size {
+  text-align: center;
+  position: relative;
+  top: 10%;
+  padding: 2.5%;
+  width: 18%;
+}
+.in-block-arr {
+  position: absolute;
+}
+.float1 {
+  float: left;
+}
+.float2 {
+  float: right;
+}
