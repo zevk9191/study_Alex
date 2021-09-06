@@ -13,48 +13,50 @@
     <main class="GeneralBlock">
       <h1 class="name-of-title">см скільки мм</h1>
       <div class="into-block">
-        <div class="in-block input-num-size float1">
+        <form class="in-block input-num-size float1">
           <!-- поле для вводу числа -->
           <input type="number" name="cm" class="enter-num" />
-        </div>
+        </form>
 
         <div class="in-block input-size float1">
           <!-- Поле де можна вибрати велечину з якої переводиш -->
           <select class="select-size">
-            <option value="">Метри</option>
-            <option value="">Кілометри</option>
-            <option value="">Сантиметри</option>
-            <option value="">Міліметри</option>
+            <option value="METER">Метри</option>
+            <option value="MILE">Милі</option>
+            <option value="KILOMETER">Кілометри</option>
+            <option value="CENTIMETER">Сантиметри</option>
+            <option value="MILIMETER">Міліметри</option>
           </select>
         </div>
 
         <div class="arrow in-block-arr">
+          <img src="/image/arrow.png" width="50px" height="50px" alt="lorem" />
           <!-- Стрілка (простий знак) -->
         </div>
 
-        <div class="in-block input-size float2">
+        <form class="in-block input-size float2">
           <!-- Поле в якому можна вибрати величину яку хочеш отримати -->
           <select class="select-size">
-            <option value="">Метри</option>
-            <option value="">Кілометри</option>
-            <option value="">Сантиметри</option>
-            <option value="">Міліметри</option>
+            <option value="METER">Метри</option>
+            <option value="MILE">Милі</option>
+            <option value="KILOMETER">Кілометри</option>
+            <option value="CENTIMETER">Сантиметри</option>
+            <option value="MILIMETER">Міліметри</option>
           </select>
-        </div>
+        </form>
         <div class="in-block input-num-size float2">
           <!-- поле яке виводить значення але його можна міняти -->
-          <input type="number" name="cm" class="enter-num" />
+          <input type="submit" name="cm" class="enter-num" />
         </div>
       </div>
-      <div>
-        <button class="button-but">Розрахувати</button>
-      </div>
-      <div class="nav-c-r">
-        <div class="end-res">
+      <div class="nav-copy-result">
+        <div class="end-result">
           <output name="result"></output>
         </div>
-        <div class="cl-end-res"></div>
-        <div class="cop-end-res"><p>скопіювати результат</p></div>
+        <div class="close-end-result">
+          
+        </div>
+        <div class="copy-end-result"><p>скопіювати результат</p></div>
       </div>
     </main>
   </body>
