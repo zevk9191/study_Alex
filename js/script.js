@@ -31,25 +31,25 @@ function fromMeter(nameOfSizeOut) {
         alert(`'В милях': ${numIn}`);
       } else {
         result *= 0.000621371;
-        alert(`'В милях' ${result}`);
+        alert(`'В милях' ${result.toFixed(2)}`);
       }
       break;
     case KILOMETER:
       result *= 0.001;
-      alert(`'В кілометрах': ${result}`);
+      alert(`'В кілометрах': ${result.toFixed(2)}`);
       break;
     case CENTIMETER:
       result *= 100;
-      alert(`'В сантиметрах': ${result}`);
+      alert(`'В сантиметрах': ${result.toFixed(2)}`);
       break;
     case MILIMETER:
       result *= 1000;
-      alert(`'В міліметрах': ${result}`);
+      alert(`'В міліметрах': ${result.toFixed(2)}`);
       break;
     case METER:
-      alert(`'Метри в метри': ${result}`);
+      alert(`'Метри в метри': ${result.toFixed(2)}`);
       return result;
   }
 }
 toMeter(2000, 'MILE');
-fromMeter('MILE');
+fromMeter('KILOMETER');
