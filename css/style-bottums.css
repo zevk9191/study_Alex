@@ -29,7 +29,7 @@
 
   color: #ffffff;
 }
-.end-res {
+.end-result {
   position: relative;
   margin: 25px 0;
   width: auto;
@@ -42,7 +42,7 @@
 
   color: #000000;
 }
-.cl-end-res {
+.close-end-result {
   position: absolute;
   top: 35px;
   left: 300px;
@@ -51,11 +51,11 @@
   border: 2px solid #000000;
   box-sizing: border-box;
 }
-.cop-end-res {
+.copy-end-result {
   position: relative;
   width: 150px;
   height: 30px;
 }
-.cop-end-res :hover {
+.copy-end-result :hover {
   background-color: grey;
 }
