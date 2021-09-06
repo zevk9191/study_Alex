@@ -4,8 +4,12 @@ const CENTIMETER = 'CENTIMETER';
 const MILIMETER = 'MILIMETER';
 const METER = 'METER';
 let result = 0;
+let numIn = 0;
+let nameOf = 0;
 
 function toMeter(numberIn, nameOfSize) {
+  numIn = numberIn;
+  nameOf = nameOfSize;
   switch (nameOfSize) {
     case MILE:
       return (result = numberIn * 1609.34);
@@ -23,8 +27,12 @@ function toMeter(numberIn, nameOfSize) {
 function fromMeter(nameOfSizeOut) {
   switch (nameOfSizeOut) {
     case MILE:
-      result *= 0.000621371;
-      alert(`'В милях' ${result}`);
+      if (nameOf == 'MILE') {
+        alert(`'В милях': ${numIn}`);
+      } else {
+        result *= 0.000621371;
+        alert(`'В милях' ${result}`);
+      }
       break;
     case KILOMETER:
       result *= 0.001;
@@ -43,5 +51,5 @@ function fromMeter(nameOfSizeOut) {
       return result;
   }
 }
-toMeter(2000, 'MILIMETER');
-fromMeter('KILOMETER');
+toMeter(2000, 'MILE');
+fromMeter('MILE');
