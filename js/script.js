@@ -1,55 +1,45 @@
-const MILE = 'MILE';
-const KILOMETER = 'KILOMETER';
-const CENTIMETER = 'CENTIMETER';
-const MILIMETER = 'MILIMETER';
-const METER = 'METER';
-let result = 0;
-let numIn = 0;
-let nameOf = 0;
-
 function toMeter(numberIn, nameOfSize) {
-  numIn = numberIn;
-  nameOf = nameOfSize;
-  switch (nameOfSize) {
-    case MILE:
+  sizeName = {
+    name: nameOfSize,
+    num: numberIn,
+  };
+  switch (sizeName.name) {
+    case 'MILE':
       return (result = numberIn * 1609.34);
-    case KILOMETER:
+    case 'KILOMETER':
       return (result = numberIn * 1000);
-    case CENTIMETER:
+    case 'CENTIMETER':
       return (result = numberIn * 0.01);
-    case MILIMETER:
+    case 'MILIMETER':
       return (result = numberIn * 0.001);
-    case METER:
+    case 'METER':
       return (result = numberIn);
   }
 }
 
-function fromMeter(nameOfSizeOut) {
+function fromMeter(result, nameOfSizeOut) {
   switch (nameOfSizeOut) {
-    case MILE:
-      if (nameOf == 'MILE') {
-        alert(`'В милях': ${numIn}`);
-      } else {
-        result *= 0.000621371;
-        alert(`'В милях' ${result.toFixed(2)}`);
-      }
+    case 'MILE':
+      sizeName.name == 'MILE'
+        ? alert(`'В милях' ${sizeName.num}`)
+        : alert(`'В милях': ${(result *= 0.000621371)} `);
       break;
-    case KILOMETER:
-      result *= 0.001;
-      alert(`'В кілометрах': ${result.toFixed(2)}`);
+    case 'KILOMETER':
+      result = result * 0.001;
+      alert(`'В кілометрах': ${result.toFixed(5)}`);
       break;
-    case CENTIMETER:
+    case 'CENTIMETER':
       result *= 100;
-      alert(`'В сантиметрах': ${result.toFixed(2)}`);
+      alert(`'В сантиметрах': ${result}`);
       break;
-    case MILIMETER:
+    case 'MILIMETER':
       result *= 1000;
-      alert(`'В міліметрах': ${result.toFixed(2)}`);
+      alert(`'В міліметрах': ${result}`);
       break;
-    case METER:
-      alert(`'Метри в метри': ${result.toFixed(2)}`);
+    case 'METER':
+      alert(`'Метри в метри': ${result}`);
       return result;
   }
 }
 toMeter(2000, 'MILE');
-fromMeter('KILOMETER');
+fromMeter(result, 'MILE');
