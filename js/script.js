@@ -1,19 +1,15 @@
 function toMeter(numberIn, nameOfSize) {
-  sizeName = {
-    name: nameOfSize,
-    num: numberIn,
-  };
-  switch (sizeName.name) {
+  switch (nameOfSize) {
     case 'MILE':
-      return (result = numberIn * 1609.34);
+      return (numberIn *= 1609.34);
     case 'KILOMETER':
-      return (result = numberIn * 1000);
+      return (numberIn *= 1000);
     case 'CENTIMETER':
-      return (result = numberIn * 0.01);
+      return (numberIn *= 0.01);
     case 'MILIMETER':
-      return (result = numberIn * 0.001);
+      return (numberIn *= 0.001);
     case 'METER':
-      return (result = numberIn);
+      return numberIn;
     default:
       break;
   }
@@ -22,7 +18,6 @@ function toMeter(numberIn, nameOfSize) {
 function fromMeter(result, nameOfSizeOut) {
   switch (nameOfSizeOut) {
     case 'MILE':
-      if (sizeName.name == 'MILE') return sizeName.num;
       return (result *= 0.000621371);
     case 'KILOMETER':
       return (result *= 0.001);
@@ -36,5 +31,3 @@ function fromMeter(result, nameOfSizeOut) {
       break;
   }
 }
-toMeter(2000, 'MILE');
-fromMeter(result, 'MILE');
