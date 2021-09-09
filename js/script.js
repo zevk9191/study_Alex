@@ -14,31 +14,27 @@ function toMeter(numberIn, nameOfSize) {
       return (result = numberIn * 0.001);
     case 'METER':
       return (result = numberIn);
+    default:
+      break;
   }
 }
 
 function fromMeter(result, nameOfSizeOut) {
   switch (nameOfSizeOut) {
     case 'MILE':
-      sizeName.name == 'MILE'
-        ? alert(`'В милях': ${sizeName.num}`)
-        : alert(`'В милях': ${(result *= 0.000621371)} `);
-      break;
+      if (sizeName.name == 'MILE') return sizeName.num;
+      return (result *= 0.000621371);
     case 'KILOMETER':
-      result *= 0.001;
-      alert(`'В кілометрах': ${result.toFixed(5)}`);
-      break;
+      return (result *= 0.001);
     case 'CENTIMETER':
-      alert(`'В сантиметрах': ${(result *= 100)}`);
-      break;
+      return (result *= 100);
     case 'MILIMETER':
-      alert(`'В міліметрах': ${(result *= 1000)}`);
-      break;
+      return (result *= 1000);
     case 'METER':
-      alert(`'В метрах': ${result}`);
+      return result;
+    default:
       break;
   }
-  return result;
 }
 toMeter(2000, 'MILE');
-fromMeter(result, 'KILOMETER');
+fromMeter(result, 'MILE');
