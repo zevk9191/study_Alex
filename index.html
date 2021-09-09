@@ -7,16 +7,16 @@
     <title>Converter</title>
     <link rel="stylesheet" href="css/style-blocks.css" />
     <link rel="stylesheet" href="css/style-bottums.css" />
-    <script src="js/script.js"></script>
+    <script defer src="js/script.js"></script>
   </head>
   <body>
-    <main class="GeneralBlock">
+    <main class="general-block">
       <h1 class="name-of-title">см скільки мм</h1>
-      <div class="into-block">
-        <form class="in-block input-num-size float1">
+      <form class="into-block">
+        <div class="in-block input-num-size float1">
           <!-- поле для вводу числа -->
           <input type="number" name="cm" class="enter-num" />
-        </form>
+        </div>
 
         <div class="in-block input-size float1">
           <!-- Поле де можна вибрати велечину з якої переводиш -->
@@ -30,11 +30,11 @@
         </div>
 
         <div class="arrow in-block-arr">
-          <img src="/image/arrow.png" width="50px" height="50px" alt="lorem" />
           <!-- Стрілка (простий знак) -->
+          <img src="/image/arrow.png" width="50px" height="50px" alt="lorem" />
         </div>
 
-        <form class="in-block input-size float2">
+        <div class="in-block input-size float2">
           <!-- Поле в якому можна вибрати величину яку хочеш отримати -->
           <select class="select-size">
             <option value="METER">Метри</option>
@@ -43,21 +43,26 @@
             <option value="CENTIMETER">Сантиметри</option>
             <option value="MILIMETER">Міліметри</option>
           </select>
-        </form>
+        </div>
         <div class="in-block input-num-size float2">
           <!-- поле яке виводить значення але його можна міняти -->
           <input type="submit" name="cm" class="enter-num" />
         </div>
-      </div>
-      <div class="nav-copy-result">
-        <div class="end-result">
-          <output name="result"></output>
+        <div class="nav-copy-result">
+          <div class="end-result">
+            <output name="result"></output>
+          </div>
+          <div class="close-end-result">
+            <img
+              src="/image/close image.jpg"
+              width="15px"
+              height="15px"
+              alt="lorem"
+            />
+          </div>
+          <div class="copy-end-result"><p>скопіювати результат</p></div>
         </div>
-        <div class="close-end-result">
-          
-        </div>
-        <div class="copy-end-result"><p>скопіювати результат</p></div>
-      </div>
+      </form>
     </main>
   </body>
 </html>

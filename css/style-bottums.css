@@ -39,7 +39,6 @@
   font-size: 25px;
   line-height: 42px;
   text-align: left;
-
   color: #000000;
 }
 .close-end-result {
@@ -48,7 +47,6 @@
   left: 300px;
   width: 10px;
   height: 10px;
-  border: 2px solid #000000;
   box-sizing: border-box;
 }
 .copy-end-result {
