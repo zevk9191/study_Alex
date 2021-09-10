@@ -15,7 +15,9 @@
       <form class="into-block">
         <div class="in-block input-num-size float1">
           <!-- поле для вводу числа -->
-          <input type="number" name="cm" class="enter-num" />
+          <label
+            >Введіть число <input type="number" name="cm" class="enter-num"
+          /></label>
         </div>
 
         <div class="in-block input-size float1">
@@ -45,8 +47,8 @@
           </select>
         </div>
         <div class="in-block input-num-size float2">
-          <!-- поле яке виводить значення але його можна міняти -->
-          <input type="submit" name="cm" class="enter-num" />
+          <!-- Кнопка яка вираховує -->
+          <button type="submit">Вирахувати</button>
         </div>
         <div class="nav-copy-result">
           <div class="end-result">
@@ -60,7 +62,9 @@
               alt="lorem"
             />
           </div>
-          <div class="copy-end-result"><p>скопіювати результат</p></div>
+          <div class="copy-end-result">
+            <button type="button">Скопіювати результат</button>
+          </div>
         </div>
       </form>
     </main>
