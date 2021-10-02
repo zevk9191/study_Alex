@@ -1,79 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Converter</title>
-    <link rel="stylesheet" href="css/style-blocks.css" />
+    <link rel="stylesheet" href="css/style-blocks.css"/>
     <script defer src="js/script.js"></script>
-  </head>
-  <body>
-    <main class="general-block">
-      <h1 class="name-of-title">Конвертер величин</h1>
-      <form class="into-block">
-        <div class="nav-enter-size">
-          <div class="in-block input-num-size float1">
+</head>
+<body>
+<main class="general-block">
+    <h1 class="name-of-title">Конвертер величин</h1>
+    <form class="form-block">
+        <div class="input-size">
             <!-- поле для вводу числа -->
             <label>
-              Введіть число
-              <input type="number" name="cm" class="enter-num"
-            /></label>
-          </div>
+                </span>Введіть число<span>
+            <input type="number" name="cm" class="enter-num"/>
+            </label>
 
-          <div class="in-block input-size input1">
-            <!-- Поле де можна вибрати велечину з якої переводиш -->
-            <select class="select-size">
-              <option value="METER">Метри</option>
-              <option value="MILE">Милі</option>
-              <option value="KILOMETER">Кілометри</option>
-              <option value="CENTIMETER">Сантиметри</option>
-              <option value="MILIMETER">Міліметри</option>
-            </select>
-          </div>
+            <label>
+                <!-- Поле де можна вибрати велечину з якої переводиш -->
+                <select class="select-size">
+                    <option value="METER">Метри</option>
+                    <option value="MILE">Милі</option>
+                    <option value="KILOMETER">Кілометри</option>
+                    <option value="CENTIMETER">Сантиметри</option>
+                    <option value="MILIMETER">Міліметри</option>
+                </select>
+            </label>
 
-          <div class="in-block-arr in-block">
-            <!-- Стрілка (простий знак) -->
-            <img
-              src="/image/arrow.png"
-              width="50px"
-              height="50px"
-              alt="lorem"
-            />
-          </div>
+            <img src="/image/arrow.png" alt="arrow"/>
 
-          <div class="in-block input-size input2">
-            <!-- Поле в якому можна вибрати величину яку хочеш отримати -->
-            <select class="select-size">
-              <option value="METER">Метри</option>
-              <option value="MILE">Милі</option>
-              <option value="KILOMETER">Кілометри</option>
-              <option value="CENTIMETER">Сантиметри</option>
-              <option value="MILIMETER">Міліметри</option>
-            </select>
-          </div>
-          <div class="button-upload">
+            <label>
+                <!-- Поле в якому можна вибрати величину яку хочеш отримати -->
+                <select class="select-size">
+                    <option value="METER">Метри</option>
+                    <option value="MILE">Милі</option>
+                    <option value="KILOMETER">Кілометри</option>
+                    <option value="CENTIMETER">Сантиметри</option>
+                    <option value="MILIMETER">Міліметри</option>
+                </select>
+            </label>
+
+        </div>
+        <div class="btn-calc">
             <!-- Кнопка яка вираховує -->
             <button type="submit">Вирахувати</button>
-          </div>
         </div>
-        <div class="nav-copy-result">
-          <div class="end-result">
+        <div class="copy-close-result">
             <output name="result"></output>
-          </div>
-          <div class="close-end-result">
-            <img
-              src="/image/close image.jpg"
-              width="15px"
-              height="15px"
-              alt="lorem"
-            />
-          </div>
-          <div class="copy-end-result">
+            <img src="/image/close image.jpg" alt="Close"/>
             <button type="button">Скопіювати результат</button>
-          </div>
         </div>
-      </form>
-    </main>
-  </body>
+    </form>
+</main>
+</body>
 </html>
