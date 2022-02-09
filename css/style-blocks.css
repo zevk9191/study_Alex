@@ -4,6 +4,10 @@
   border: 3px solid silver;
 }
 
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .name-of-title,
 .input-size {
   display: flex;
@@ -22,7 +26,8 @@
 }
 
 .select-size,
-.btns > button,
+.btn-calc,
+.btn-copy,
 .enter-num,
 .out-result {
   padding: 10px;
@@ -34,7 +39,7 @@
   background: rgb(200, 207, 179);
 }
 
-label > span {
+.text-input {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   bottom: 33px;
@@ -44,9 +49,6 @@ label > span {
   width: 150px;
   height: 25px;
 }
-.btns > button[type='submit'] {
+.btn-calc {
   margin-right: 5%;
-}
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
 }
