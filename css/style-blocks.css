@@ -1,33 +1,52 @@
 .general-block {
-    margin: auto;
-    padding: 2%;
-    border: 1px solid black;
+  margin: auto;
+  padding: 15px;
+  border: 3px solid silver;
 }
 
-.name-of-title {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
+.name-of-title,
 .input-size {
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px;
+}
+.copy-close-result,
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
 }
 
-.btn-calc {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.select-size,
+.btns > button,
+.enter-num,
+.out-result {
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10%;
+  border: 2px solid rgb(36, 23, 23);
+  background: rgb(200, 207, 179);
 }
 
-.copy-close-result {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
+label > span {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  bottom: 33px;
+  left: 50%;
+}
+.out-result {
+  width: 150px;
+  height: 25px;
+}
+.btns > button[type='submit'] {
+  margin-right: 5%;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
 }
