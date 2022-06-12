@@ -1,7 +1,7 @@
 .general-block {
   margin: 1vh;
   padding: 15px;
-  border: 3px solid silver;
+  border: 3px solid rgb(255, 2, 2);
 }
 
 h1 {
@@ -38,8 +38,8 @@ h1 {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10%;
-  border: 2px solid rgb(36, 23, 23);
-  background: rgb(200, 207, 179);
+  border: 2px solid rgb(207, 45, 45);
+  background: rgba(15, 144, 214, 0.516);
 }
 
 .inputs_ {
