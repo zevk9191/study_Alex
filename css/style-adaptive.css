@@ -1,0 +1,79 @@
+@media all and (max-width: 420px) {
+  .general-block {
+    margin: 1vh;
+    padding: 15px;
+    border: 3px solid silver;
+  }
+
+  .select-size,
+  .select-size2,
+  .btn-calc,
+  .btn-copy,
+  .enter-num,
+  .out-result {
+    padding: 5px;
+    text-align: center;
+    font-size: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10%;
+    border: 1px solid rgb(36, 23, 23);
+    background: rgb(200, 207, 179);
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+  }
+
+  .name-of-title,
+  .input-size {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+  }
+
+  .copy-close-result,
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+  }
+
+  .inputs_ {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+  }
+  .text-input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+  }
+
+  .out-result {
+    width: 100px;
+    height: 20px;
+  }
+
+  .btn-calc {
+    margin-right: 5%;
+  }
+
+  #close_img {
+    margin-bottom: 25px;
+    width: 20px;
+  }
+  .img_arrow {
+    width: 45px;
+    transform: rotate(90deg);
+  }
+  .input-size {
+    min-height: 200px;
+  }
+}

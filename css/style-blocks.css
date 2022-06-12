@@ -1,29 +1,30 @@
 .general-block {
-    margin: auto;
-    padding: 15px;
-    border: 3px solid silver;
+  margin: 1vh;
+  padding: 15px;
+  border: 3px solid silver;
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
 }
 
 .name-of-title,
 .input-size {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3%;
 }
 
 .copy-close-result,
 .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
 }
 
 .select-size,
@@ -32,31 +33,41 @@ h1 {
 .btn-copy,
 .enter-num,
 .out-result {
-    padding: 10px;
-    text-align: center;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10%;
-    border: 2px solid rgb(36, 23, 23);
-    background: rgb(200, 207, 179);
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10%;
+  border: 2px solid rgb(36, 23, 23);
+  background: rgb(200, 207, 179);
+}
+
+.inputs_ {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
 }
 
 .text-input {
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    bottom: 33px;
-    left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
 }
 
 .out-result {
-    width: 150px;
-    height: 25px;
+  width: 150px;
+  height: 25px;
 }
 
 .btn-calc {
-    margin-right: 5%;
+  margin-right: 5%;
 }
 
 #close_img {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.img_arrow {
+  width: 100px;
 }

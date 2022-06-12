@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Converter</title>
-    <link rel="stylesheet" href="css/style-blocks.css"/>
+    <link rel="stylesheet" href="css/style-blocks.css" />
+    <link rel="stylesheet" href="css/style-adaptive.css" />
     <script defer src="js/script.js"></script>
-</head>
-<body>
-<main class="general-block">
-    <h1 class="name-of-title">Конвертер величин</h1>
-    <form class="form-block">
+  </head>
+  <body>
+    <main class="general-block">
+      <h1 class="name-of-title">Конвертер величин</h1>
+      <form class="form-block">
         <div class="input-size">
-            <!-- поле для вводу числа -->
-            <label>
-                <span class="text-input">Введіть число</span>
-                <input type="number" name="cm" class="enter-num"/>
-            </label>
+          <!-- поле для вводу числа -->
+          <label class="inputs_">
+            <span class="text-input">Введіть число</span>
+            <input type="number" name="cm" class="enter-num" />
+          </label>
 
-            <label>
-                <!-- Поле де можна вибрати велечину з якої переводиш -->
-                <select class="select-size">
-                    <option value="METER">Метри</option>
-                    <option value="MILE">Милі</option>
-                    <option value="KILOMETER">Кілометри</option>
-                    <option value="CENTIMETER">Сантиметри</option>
-                    <option value="MILIMETER">Міліметри</option>
-                </select>
-            </label>
+          <label>
+            <!-- Поле де можна вибрати велечину з якої переводиш -->
+            <select class="select-size">
+              <option value="METER">Метри</option>
+              <option value="MILE">Милі</option>
+              <option value="KILOMETER">Кілометри</option>
+              <option value="CENTIMETER">Сантиметри</option>
+              <option value="MILIMETER">Міліметри</option>
+            </select>
+          </label>
 
-            <img src="image/arrow.png" alt="arrow" width="100px"/>
+          <img src="image/arrow.png" alt="arrow" class="img_arrow" />
 
-            <label>
-                <!-- Поле в якому можна вибрати величину яку хочеш отримати -->
-                <select class="select-size2">
-                    <option value="METER">Метри</option>
-                    <option value="MILE">Милі</option>
-                    <option value="KILOMETER">Кілометри</option>
-                    <option value="CENTIMETER">Сантиметри</option>
-                    <option value="MILIMETER">Міліметри</option>
-                </select>
-            </label>
+          <label>
+            <!-- Поле в якому можна вибрати величину яку хочеш отримати -->
+            <select class="select-size2">
+              <option value="METER">Метри</option>
+              <option value="MILE">Милі</option>
+              <option value="KILOMETER">Кілометри</option>
+              <option value="CENTIMETER">Сантиметри</option>
+              <option value="MILIMETER">Міліметри</option>
+            </select>
+          </label>
         </div>
         <div class="buttons">
-            <!-- Кнопка яка вираховує -->
-            <button id="btn_calc" class="btn-calc" type="button">Вирахувати</button>
-            <button class="btn-copy" type="button">Скопіювати результат</button>
+          <!-- Кнопка яка вираховує -->
+          <button id="btn_calc" class="btn-calc" type="button">
+            Вирахувати
+          </button>
+          <button class="btn-copy" type="button">Скопіювати результат</button>
         </div>
         <div class="copy-close-result">
-            <textarea class="out-result" ></textarea>
-            <img id="close_img" src="image/close_image.jpg" alt="close" width="30px"/>
+          <textarea class="out-result"></textarea>
+          <img
+            id="close_img"
+            src="image/close_image.jpg"
+            alt="close"
+            width="30px"
+          />
         </div>
-    </form>
-</main>
-</body>
+      </form>
+    </main>
+  </body>
 </html>
