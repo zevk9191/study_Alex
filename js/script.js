@@ -1,14 +1,9 @@
-const buttonCalculate = document.querySelector('.btn-calc');
-// const buttonCopy = document.querySelector('.btn-copy');
 const outResult = document.querySelector('.out-result');
 const inputNumber = document.querySelector('.enter-num');
 const inSize = document.querySelector('.select-size');
 const outSize = document.querySelector('.select-size2');
-
-buttonCalculate.onclick = function () {
-    let result = fromMeter(toMeter(inputNumber.value, inSize.value), outSize.value);
-    outResult.innerHTML = result;
-}
+const btnCopy = document.querySelector('.btn-copy');
+const btnCalculate = document.querySelector('.btn-calc');
 
 function toMeter(numberIn, nameOfSizeIn) {
     switch (nameOfSizeIn) {
@@ -43,3 +38,16 @@ function fromMeter(result, nameOfSizeOut) {
             break;
     }
 }
+
+btnCalculate.addEventListener("click", () => {
+    outResult.innerHTML = fromMeter(toMeter(inputNumber.value, inSize.value), outSize.value);
+});
+
+btnCopy.addEventListener("click", () => {
+    outResult.select();
+    document.execCommand("copy");
+});
+
+close_img.addEventListener("click", () => {
+    location.reload();
+});

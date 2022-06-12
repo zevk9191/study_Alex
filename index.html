@@ -30,7 +30,7 @@
                 </select>
             </label>
 
-            <img src="/image/arrow.png" alt="arrow" width="100px"/>
+            <img src="image/arrow.png" alt="arrow" width="100px"/>
 
             <label>
                 <!-- Поле в якому можна вибрати величину яку хочеш отримати -->
@@ -43,13 +43,14 @@
                 </select>
             </label>
         </div>
-        <div class="btns">
+        <div class="buttons">
             <!-- Кнопка яка вираховує -->
-            <button class="btn-calc" type="button">Вирахувати</button>
-            <button class="btn-copy" type="button" onclick="copyResult()">Скопіювати результат</button>
+            <button id="btn_calc" class="btn-calc" type="button">Вирахувати</button>
+            <button class="btn-copy" type="button">Скопіювати результат</button>
         </div>
         <div class="copy-close-result">
-            <output name="result" class="out-result"></output>
+            <textarea class="out-result" ></textarea>
+            <img id="close_img" src="image/close_image.jpg" alt="close" width="30px"/>
         </div>
     </form>
 </main>
